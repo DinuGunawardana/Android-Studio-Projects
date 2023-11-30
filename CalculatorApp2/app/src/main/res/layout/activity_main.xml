@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number 1"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumber1"
+        android:hint="Enter number 2"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumber2"
+        android:text="Add"
+        android:onClick="onAddClick"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/buttonSubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAdd"
+        android:text="Subtract"
+        android:onClick="onSubtractClick"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/buttonMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSubtract"
+        android:text="Multiply"
+        android:onClick="onMultiplyClick"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/buttonDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonMultiply"
+        android:text="Divide"
+        android:onClick="onDivideClick"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonDivide"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"/>
+
+</RelativeLayout>
